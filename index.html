@@ -51,7 +51,6 @@
   .wrap{max-width:1160px;margin:0 auto;padding:0 24px}
   section{scroll-margin-top:88px}
 
-  /* ---------- header ---------- */
   .nav{
     position:sticky;top:0;z-index:50;
     background:rgba(11,13,16,.78);
@@ -70,7 +69,6 @@
   }
   .nav-links a:hover{color:var(--fg)}
 
-  /* ---------- type ---------- */
   h1,h2,h3{font-family:var(--font-display);margin:0}
   .eyebrow{
     font-family:var(--font-mono);font-size:12px;font-weight:600;
@@ -94,7 +92,6 @@
   .meta-row span{display:inline-flex;align-items:center;gap:8px}
   .meta-row svg{flex:none}
 
-  /* ---------- buttons ---------- */
   .btn{
     display:inline-flex;align-items:center;gap:9px;
     padding:12px 20px;border-radius:10px;border:1px solid transparent;
@@ -108,11 +105,9 @@
   .btn-ghost:hover{background:rgba(255,255,255,.07)}
   .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
 
-  /* ---------- hero ---------- */
   .hero{padding:88px 0 84px}
   .hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:56px;align-items:center}
 
-  /* ---------- scene card ---------- */
   .scene-card{
     background:var(--surface);border:1px solid var(--border);border-radius:14px;
     padding:14px 14px 12px;
@@ -132,12 +127,10 @@
   }
   .scene-note b{color:var(--accent)}
 
-  /* ---------- sections ---------- */
   .section{padding:96px 0}
   .section-head{max-width:640px;margin-bottom:48px}
   .section-head .lede{margin-top:14px;font-size:16.5px}
 
-  /* bento */
   .bento{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
   .tip{
     grid-column:span 2;
@@ -151,7 +144,6 @@
   .tip h3{font-size:16.5px;font-weight:600;letter-spacing:-.005em;margin-bottom:8px}
   .tip p{margin:0;font-size:14.5px;color:var(--muted);line-height:1.6}
 
-  /* missions */
   .missions{display:grid;grid-template-columns:1fr 1fr;gap:14px}
   .mission{
     background:var(--surface);border:1px solid var(--border);border-radius:14px;
@@ -171,7 +163,6 @@
   .mission-par{font-family:var(--font-mono);font-size:12px;letter-spacing:.08em;color:var(--muted);text-transform:uppercase}
   .mission .btn{padding:9px 16px;font-size:14px}
 
-  /* controls */
   .ctrl-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:56px;align-items:start}
   .ctrl-list{border-top:1px solid var(--border);list-style:none;margin:0;padding:0}
   .ctrl-list li{
@@ -190,7 +181,6 @@
   .ctrl-aside p{margin:0;font-size:14.5px;color:var(--muted);line-height:1.65}
   .ctrl-aside .chip{margin-bottom:16px}
 
-  /* faq */
   .faq{max-width:820px;border-top:1px solid var(--border)}
   .faq details{border-bottom:1px solid var(--border)}
   .faq summary{
@@ -205,7 +195,6 @@
   .faq details[open] summary svg{transform:rotate(180deg)}
   .faq .answer{padding:0 0 22px;color:var(--muted);font-size:15px;max-width:62ch;line-height:1.65}
 
-  /* cta band */
   .band{
     background:var(--surface);border:1px solid var(--border);border-radius:16px;
     padding:44px 40px;display:flex;align-items:center;justify-content:space-between;
@@ -214,14 +203,12 @@
   .band h2{font-size:clamp(22px,2.6vw,28px);font-weight:600;letter-spacing:-.015em}
   .band p{margin:8px 0 0;color:var(--muted);font-size:15px;max-width:52ch}
 
-  /* footer */
   footer{border-top:1px solid var(--border);padding:36px 0 44px;margin-top:24px}
   .foot{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justify-content:space-between}
   .foot p{margin:0;font-family:var(--font-mono);font-size:12.5px;letter-spacing:.03em;color:var(--muted)}
   .foot a{color:var(--muted);text-decoration:none;font-size:13.5px;font-weight:550}
   .foot a:hover{color:var(--fg)}
 
-  /* reveal */
   .reveal{opacity:0;transform:translateY(12px)}
   .reveal.in{
     opacity:1;transform:none;
@@ -229,7 +216,6 @@
     transition-delay:calc(var(--i,0)*80ms);
   }
 
-  /* responsive */
   @media (max-width:1020px){
     .hero-grid{grid-template-columns:1fr;gap:44px}
     .ctrl-grid{grid-template-columns:1fr;gap:40px}
@@ -276,3 +262,281 @@
     </nav>
   </div>
 </header>
+
+<main id="icerik">
+
+  <section class="hero" data-od-id="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Paralel Park Projesi · Tarayıcıda Oynanır</p>
+        <h1 class="display">Park Ustası<span class="soft"> ile direksiyona geç.</span></h1>
+        <p class="lede">Paralel ve L parkı, trafik kurallarına uygun öğren: canlı aynalar, kokpit, gece modu ve gerçek kurallar. Kurulum yok — tarayıcıda aç, direksiyona geç.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="oyun.html">Oyunu başlat
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="#kontroller">Kontrolleri gör</a>
+        </div>
+        <div class="meta-row">
+          <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21h8M12 17v4"/><rect x="5" y="3" width="14" height="14" rx="2"/></svg>Kurulum yok</span>
+          <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.7 5.6 6.3.9-4.5 4.3 1 6.2-5.5-3-5.5 3 1-6.2L3 9.5l6.3-.9z"/></svg>2 görev</span>
+          <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg>30 km/s sınırı</span>
+          <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10 18h4"/></svg>Telefon uyumlu</span>
+        </div>
+      </div>
+
+      <div class="scene-card reveal" style="--i:2" aria-label="Görev 1 sahnesi: kaldırım kenarında paralel park">
+        <div class="scene-top">
+          <span class="chip"><span class="dot" aria-hidden="true"></span>Görev 1 · Paralel Park</span>
+          <span class="chip">Üstten görünüm</span>
+        </div>
+        <svg class="scene" viewBox="0 0 620 420" role="img" aria-label="Yukarıdan görünüm: gümüş renkli araç, iki park edilmiş araç arasındaki yeşil kesikli boşluğa manevra yapıyor.">
+          <rect x="0" y="0" width="620" height="76" fill="#1a1e26"/>
+          <rect x="0" y="344" width="620" height="76" fill="#1a1e26"/>
+          <g stroke="rgba(255,255,255,.10)" stroke-width="2">
+            <path d="M12 10v56M44 10v56M76 10v56M108 10v56M140 10v56M172 10v56M204 10v56M236 10v56M268 10v56M300 10v56M332 10v56M364 10v56M396 10v56M428 10v56M460 10v56M492 10v56M524 10v56M556 10v56M588 10v56"/>
+            <path d="M12 354v56M44 354v56M76 354v56M108 354v56M140 354v56M172 354v56M204 354v56M236 354v56M268 354v56M300 354v56M332 354v56M364 354v56M396 354v56M428 354v56M460 354v56M492 354v56M524 354v56M556 354v56M588 354v56"/>
+          </g>
+          <line x1="0" y1="76" x2="620" y2="76" stroke="#e8e9ec" stroke-width="3" opacity=".55"/>
+          <line x1="0" y1="344" x2="620" y2="344" stroke="#e8e9ec" stroke-width="3" opacity=".55"/>
+          <line x1="0" y1="224" x2="620" y2="224" stroke="rgba(255,255,255,.18)" stroke-width="2.5" stroke-dasharray="20 16"/>
+          <rect x="215" y="86" width="120" height="54" fill="rgba(126,211,33,.06)"/>
+          <rect x="215" y="86" width="120" height="54" fill="none" stroke="#7ed321" stroke-width="3.5" stroke-dasharray="12 9"/>
+          <g>
+            <use href="#carWhite" x="167" y="113"/>
+            <use href="#carBlue" x="383" y="113"/>
+          </g>
+          <defs>
+            <g id="carWhite">
+              <rect x="-46" y="-20" width="92" height="40" rx="11" fill="#e8eaed" stroke="rgba(0,0,0,.35)" stroke-width="1.4"/>
+              <rect x="-30" y="-14" width="26" height="28" rx="5" fill="#9aa1ab"/>
+              <rect x="0" y="-14" width="24" height="28" rx="5" fill="#9aa1ab"/>
+              <rect x="-40" y="-24" width="14" height="5" rx="2.5" fill="#7c828c"/>
+              <rect x="26" y="-24" width="14" height="5" rx="2.5" fill="#7c828c"/>
+              <rect x="-40" y="19" width="14" height="5" rx="2.5" fill="#7c828c"/>
+              <rect x="26" y="19" width="14" height="5" rx="2.5" fill="#7c828c"/>
+            </g>
+            <g id="carBlue">
+              <rect x="-46" y="-20" width="92" height="40" rx="11" fill="#2456a6" stroke="rgba(0,0,0,.4)" stroke-width="1.4"/>
+              <rect x="-30" y="-14" width="26" height="28" rx="5" fill="#16305e"/>
+              <rect x="0" y="-14" width="24" height="28" rx="5" fill="#16305e"/>
+              <rect x="-40" y="-24" width="14" height="5" rx="2.5" fill="#122548"/>
+              <rect x="26" y="-24" width="14" height="5" rx="2.5" fill="#122548"/>
+              <rect x="-40" y="19" width="14" height="5" rx="2.5" fill="#122548"/>
+              <rect x="26" y="19" width="14" height="5" rx="2.5" fill="#122548"/>
+            </g>
+          </defs>
+          <path d="M450 290 L380 290 C340 290 330 250 330 216 C330 170 320 140 295 122 C285 114 275 112 272 112" fill="none" stroke="rgba(255,255,255,.5)" stroke-width="3" stroke-dasharray="14 12"/>
+          <g>
+            <rect x="404" y="268" width="92" height="44" rx="11" fill="#cfd4da" stroke="rgba(0,0,0,.4)" stroke-width="1.4"/>
+            <rect x="418" y="275" width="27" height="30" rx="5" fill="#5b6470"/>
+            <rect x="449" y="275" width="25" height="30" rx="5" fill="#5b6470"/>
+            <rect x="409" y="263" width="15" height="6" rx="3" fill="#828a94"/>
+            <rect x="476" y="263" width="15" height="6" rx="3" fill="#828a94"/>
+            <rect x="409" y="311" width="15" height="6" rx="3" fill="#828a94"/>
+            <rect x="476" y="311" width="15" height="6" rx="3" fill="#828a94"/>
+            <circle cx="408" cy="278" r="3.4" fill="#fff6c9"/>
+            <circle cx="408" cy="302" r="3.4" fill="#fff6c9"/>
+            <rect x="492" y="278" width="4" height="8" rx="2" fill="#a13a3a"/>
+            <rect x="492" y="294" width="4" height="8" rx="2" fill="#a13a3a"/>
+          </g>
+          <g>
+            <rect x="484" y="358" width="3" height="26" fill="#9aa0a6"/>
+            <rect x="471" y="336" width="30" height="30" rx="4" fill="#1565c0" stroke="#fff" stroke-width="2.5"/>
+            <text x="486" y="358" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#fff" text-anchor="middle">P</text>
+            <rect x="548" y="358" width="3" height="26" fill="#9aa0a6"/>
+            <circle cx="549.5" cy="350" r="14" fill="#fff" stroke="#d32f2f" stroke-width="3.5"/>
+            <text x="549.5" y="355" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#111" text-anchor="middle">30</text>
+          </g>
+        </svg>
+        <p class="scene-note">Görev 1'de kaldırım kenarındaki <b>yeşil kesikli boşluğa</b> paralel park ediyorsun. Aynalar hizalanınca direksiyon sağa tam, 45°'de düz, hiza gelince sola tam — oyunun kokpiti ve aynaları yolu gösterir.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="ozellikler" data-od-id="ozellikler">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Özellikler</p>
+        <h2 class="section-title">Sadece park etmiyorsun — araç kullanıyorsun</h2>
+        <p class="lede">Park Ustası, park manevrasını gerçek bir sürüş bağlamına koyar: kurallar, gözlem ve kontrol aynı anda işler.</p>
+      </div>
+      <div class="bento">
+        <article class="tip wide reveal">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v6M4.2 16.5l5.2-3M19.8 16.5l-5.2-3"/></svg>
+          <h3>Kokpit ve canlı aynalar</h3>
+          <p>Direksiyon birebir döner; gösterge, vites (D/N/R) ve hasar lambası kokpitte. Dikiz ve iki yan ayna, sahnenin gerçek zamanlı çizimiyle çalışır — parkı aynadan takip edersin.</p>
+        </article>
+        <article class="tip wide reveal" style="--i:1">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="15" height="12" rx="2"/><path d="M22 8l-5 4.5L22 17z"/><path d="M6 10.5h4M6 13.5h6"/></svg>
+          <h3>Geri görüş kamerası</h3>
+          <p>Geri vitese geçince kamera açılır: yeşil, turuncu ve kırmızı bantlar mesafeyi okutur; park kılavuz çizgileri direksiyon açına göre eğrilir.</p>
+        </article>
+        <article class="tip reveal">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 1 1 9.5 3.5a7 7 0 0 0 11 11z"/></svg>
+          <h3>Gece modu</h3>
+          <p>Tek tuşla gece: far havuzları, sinyal ışıkları ve sokak lambaları sahneyi aydınlatır; geri viteste beyaz ışık yanar.</p>
+        </article>
+        <article class="tip reveal" style="--i:1">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 7.8-8 9-4.6-1.2-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg>
+          <h3>Gerçekçi kurallar</h3>
+          <p>30 km/s hız sınırı, manevra öncesi sinyal zorunluluğu, çarpma = hasar. Hasar %100 olursa araç kullanılamaz — görev başarısız.</p>
+        </article>
+        <article class="tip reveal" style="--i:2">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4l2.4 4.9 5.6.8-4 3.9.9 5.4-4.9-2.6-4.9 2.6.9-5.4-4-3.9 5.6-.8z"/></svg>
+          <h3>Yıldızlı değerlendirme</h3>
+          <p>Süre, çarpma ve hız disiplinine göre 1–3 yıldız: temiz manevra üç yıldızı getirir, acele götürür.</p>
+        </article>
+        <article class="tip full reveal">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10 18h4"/><path d="M2 9v6M22 9v6" opacity=".5"/></svg>
+          <h3>Telefonda tam sürüş</h3>
+          <p>Dokunmatik pedallar, sinyal anahtarları ve el freni ekranda; titreşim, motor sesi ve tam ekranla gerçek sürüş hissi. Telefonda "Ana Ekrana Ekle" ile oyunu uygulama gibi kurabilirsin — PWA olarak çalışır.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="gorevler" data-od-id="gorevler">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Görevler</p>
+        <h2 class="section-title">İki görev, tek hedef: kurallı park</h2>
+        <p class="lede">Her görev tanıtım ekranıyla başlar; adımlar ekranda sırayla anlatılır. Süre biterse ya da hasar dolarsa görevi tekrar kurarsın.</p>
+      </div>
+      <div class="missions">
+        <article class="mission reveal">
+          <span class="mission-num">Görev 01</span>
+          <h3>Paralel Park</h3>
+          <p>Kaldırım kenarında, iki araç arasındaki boşluğa paralel park. Trafik ışığı, P tabelası ve hız sınırı görevde seninle.</p>
+          <ol>
+            <li>Sağ sinyal ver, kaldırıma ~1 m mesafeden ilerle, <b>mavi aracın yanında</b> aynalar hizalı dur.</li>
+            <li>Direksiyonu <b>sağa tam kır</b>, yavaşça geri gel.</li>
+            <li>Sağ arka tekerlek kaldırım çizgisine yaklaşınca <b>sola tam kır</b>.</li>
+            <li>Araç <b>paralel</b> olunca dur, düzelt ve bekle.</li>
+          </ol>
+          <div class="mission-foot">
+            <span class="mission-par">Hedef süre · 60 sn</span>
+            <a class="btn btn-ghost" href="oyun.html">Bu görevi oyna</a>
+          </div>
+        </article>
+        <article class="mission reveal" style="--i:1">
+          <span class="mission-num">Görev 02</span>
+          <h3>L Şeklinde Park</h3>
+          <p>Otoparkta 1–5 arası numaralı yerlerden biri her denemede rastgele seçilir; koniler arasından L manevrasıyla geri girersin.</p>
+          <ol>
+            <li>Numaralı yere ~1,5 m yandan yaklaşarak hizasından geç.</li>
+            <li>Yan aynan çizgiyle hizalanınca dur ve <b>sinyali ver</b>.</li>
+            <li>Direksiyonu <b>sağa tam kır</b>, yavaşça geri gel.</li>
+            <li>Çizgilere <b>paralel</b> olunca direksiyonu düzelt, geriye tamamla.</li>
+          </ol>
+          <div class="mission-foot">
+            <span class="mission-par">Hedef süre · 75 sn</span>
+            <a class="btn btn-ghost" href="oyun.html">Bu görevi oyna</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="kontroller" data-od-id="kontroller">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Kontroller</p>
+        <h2 class="section-title">Ellerini klavyeye, gözünü aynaya</h2>
+      </div>
+      <div class="ctrl-grid">
+        <ul class="ctrl-list reveal">
+          <li><span class="keys"><kbd>W</kbd><kbd>↑</kbd></span><span class="act">Gaz</span></li>
+          <li><span class="keys"><kbd>S</kbd><kbd>↓</kbd></span><span class="act">Fren + geri vites</span></li>
+          <li><span class="keys"><kbd>A</kbd><kbd>D</kbd><kbd>←</kbd><kbd>→</kbd></span><span class="act">Direksiyon</span></li>
+          <li><span class="keys"><kbd>Boşluk</kbd></span><span class="act">El freni</span></li>
+          <li><span class="keys"><kbd>Q</kbd><kbd>E</kbd></span><span class="act">Sol / sağ sinyal</span></li>
+          <li><span class="keys"><kbd>C</kbd></span><span class="act">Kokpit aç – kapa</span></li>
+          <li><span class="keys"><kbd>R</kbd></span><span class="act">Görevi yeniden başlat</span></li>
+        </ul>
+        <aside class="ctrl-aside reveal" style="--i:1">
+          <span class="chip"><span class="dot" aria-hidden="true"></span>Telefonda</span>
+          <h3>Pedallar ekranda</h3>
+          <p>Gaz, fren ve direksiyon butonları köşelerde; sinyal anahtarları sol altta. Görev başlarken tam ekran açılır, çarpmalarda telefon titrer. Motor sesi hıza göre değişir.</p>
+          <p style="margin-top:10px">Klavye kısayolları masaüstünde geçerlidir; iki kontrol aynı anda çalışır.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="sss" data-od-id="sss">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">SSS</p>
+        <h2 class="section-title">Merak edilenler</h2>
+      </div>
+      <div class="faq reveal">
+        <details>
+          <summary>Kurulum gerekiyor mu?
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <p class="answer">Hayır. Oyun tarayıcıda çalışır; bilgisayarda ve telefonda hiçbir kurulum olmadan açılır. İstersen telefonda "Ana Ekrana Ekle" ile uygulama gibi kullanabilirsin.</p>
+        </details>
+        <details>
+          <summary>Ücretli mi, reklam var mı?
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <p class="answer">Ücretsiz ve reklamsız. Tüm görevler, gece modu ve kokpit dahil — sürüş oynadıkça açılmaz, her şey baştan açık.</p>
+        </details>
+        <details>
+          <summary>Gerçek ehliyet eğitiminin yerine geçer mi?
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <p class="answer">Geçmez; eğitim amaçlı bir simülasyondur. Manevra sırası, sinyal kullanımı ve gözlem alışkanlığı kazandırmaya yardımcı olur; gerçek araç pratiğinin yerine geçmez.</p>
+        </details>
+        <details>
+          <summary>Puanım nasıl hesaplanıyor?
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <p class="answer">Üç yıldızla başlarsın: her çarpma, süre hedefini aşmak ve hız sınırını ihlal birer yıldız düşürür. Temiz ve disiplinli manevra üç yıldızı getirir.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" data-od-id="cta" style="padding-top:0">
+    <div class="wrap">
+      <div class="band reveal">
+        <div>
+          <h2>Direksiyon seni bekliyor</h2>
+          <p>Tarayıcıda aç, görev tanıtımını oku, sinyalini ver. İlk üç yıldızı bugün topla.</p>
+        </div>
+        <a class="btn btn-primary" href="oyun.html">Oyunu başlat
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <p>Paralel Park · Park Ustası — eğitim amaçlı tarayıcı oyunu. © 2026</p>
+    <a href="https://github.com/ahmetziyac/paralelpark" rel="noopener">GitHub</a>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+  var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var reveals = document.querySelectorAll(".reveal");
+  if ("IntersectionObserver" in window && !reduceMotion){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); }
+      });
+    }, {threshold:.12, rootMargin:"0px 0px -40px 0px"});
+    reveals.forEach(function(el){ io.observe(el); });
+  } else {
+    reveals.forEach(function(el){ el.classList.add("in"); });
+  }
+})();
+</script>
+</body>
+</html>
